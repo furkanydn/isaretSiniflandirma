@@ -39,10 +39,10 @@ function gotResults(error, results) {
   }
   label = results[0].label;
   console.log('En Yakın Komşu : '+label);
-  sonucBir.html(`Benzerlik Tahmin Oranı: ${results[0].label} Harfi için ${nf(results[0].confidence,0,2)}`);
-  sonucIki.html(`Benzerlik Tahmin Oranı: ${results[1].label} Harfi için  ${nf(results[1].confidence,0,2)}`);
-  sonucUc.html(`Benzerlik Tahmin Oranı: ${results[2].label} Harfi için ${nf(results[2].confidence,0,2)}`);
-  sonucDort.html(`Benzerlik Tahmin Oranı: ${results[3].label} Harfi için ${nf(results[3].confidence,0,2)}`);
-  sonucBes.html(`Benzerlik Tahmin Oranı: ${results[4].label} Harfi için ${nf(results[4].confidence,0,2)}`);
+  sonucBir.html(`Benzerlik Tahmin Oranı: ${results[0].label} Harfi için ${nf(results[0].confidence,0,5)}`);
+  sonucIki.html(`Benzerlik Tahmin Oranı: ${results[1].label} Harfi için  ${nf(results[1].confidence,0,5)}`);
+  sonucUc.html(`Benzerlik Tahmin Oranı: ${results[2].label} Harfi için ${nf(results[2].confidence,0,5)}`);
+  sonucDort.html(`Benzerlik Tahmin Oranı: ${results[3].label} Harfi için ${nf(results[3].confidence,0,5)}`);
+  sonucBes.html(`Benzerlik Tahmin Oranı: ${results[4].label} Harfi için ${nf(results[4].confidence,0,5)}`);
   classifyVideo();
 }
