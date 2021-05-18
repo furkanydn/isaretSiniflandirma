@@ -1,0 +1,44 @@
+let siniflandirma;
+let video;
+
+// Kamera Ayarlarını Buradan Alacağız
+var videoAyarlar = {
+    width: 640,
+    height: 480,
+    quality: 100,
+    frames: 30,
+    delay: 1,
+    saveShot: true;
+    output: 'webP'
+    device: false,
+    callBackFunction: 'konum',
+    verbose: false
+};
+
+preload(video){
+    siniflandirma = ml5;
+    video = loadVideo(node-webcam);
+};
+
+videoSetup(){
+    preload(video);
+};
+
+var webcam = Webcam.create(videoAyarlar);
+
+data = function(error,data)
+
+webcam.capture('picture',videoAyarlar,data) {
+};
+
+webcam.list(list) {
+    var anotCam = webcam.create({device: list[0]});
+};
+
+var configuration = {
+    callBackFunction: 'base64'
+};
+
+webcam.capture('picture', configuration, data) {
+    return image = "<img src='"+video+"'>";
+}
